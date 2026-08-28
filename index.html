@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鸡毛蒜皮 - 页面已迁移</title>
+  <meta name="robots" content="noindex">
+  <!-- 2秒后自动跳转，兼容不支持 JS 的环境 -->
+  <meta http-equiv="refresh" content="2; url=https://jmsp.app">
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #fafafa;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    .icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 0 8px;
+    }
+    p {
+      font-size: 15px;
+      color: #666;
+      margin: 0 0 20px;
+    }
+    a.btn {
+      display: inline-block;
+      background: #07c160;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 10px 28px;
+      border-radius: 24px;
+    }
+    .new-url {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="icon">🏠➡️</div>
+  <h1>官网已迁移</h1>
+  <p>正在为你跳转到新地址，请稍候...</p>
+  <a class="btn" href="https://jmsp.app">立即前往新官网</a>
+  <div class="new-url">https://jmsp.app</div>
+
+  <script>
+    // 延迟跳转，保留原始路径和参数，且不影响页面内容先展示出来
+    setTimeout(function () {
+      window.location.replace("https://jmsp.app" + window.location.pathname + window.location.search);
+    }, 300);
+  </script>
+</body>
+</html>
