@@ -6,7 +6,7 @@
   <title>鸡毛蒜皮 - 页面已迁移</title>
   <meta name="robots" content="noindex">
   <!-- 2秒后自动跳转，兼容不支持 JS 的环境 -->
-  <meta http-equiv="refresh" content="2; url=https://jmsp.app">
+  <meta http-equiv="refresh" content="0; url=https://jmsp.app">
   <style>
     * { box-sizing: border-box; }
     html, body {
@@ -64,10 +64,8 @@
   <div class="new-url">https://jmsp.app</div>
 
   <script>
-    // 延迟跳转，保留原始路径和参数，且不影响页面内容先展示出来
-    setTimeout(function () {
-      window.location.replace("https://jmsp.app" + window.location.pathname + window.location.search);
-    }, 300);
+    // 立即跳转，保留原始路径和参数
+    window.location.replace("https://jmsp.app" + window.location.pathname + window.location.search);
   </script>
 </body>
 </html>
